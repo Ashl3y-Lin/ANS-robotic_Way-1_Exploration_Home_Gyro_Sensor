@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensors: Gyro</title>
+
+    <link rel="icon" href="https://i.ibb.co/9Ztfdxp/ROBOTICS.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="dropdown-sidebar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="quizSection.css">
+</head>
+<body>
+
+    <!-- 3 columns -->
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home"><img src="https://i.ibb.co/fChm6F5/home-icon-silhouette.png" alt=""> Home ⌄ </img></a>
+                    <ul  class="dropdown">
+                        <li><a href="#">Begin?</a></li>
+                        <li><a href="#">10_Topics</a></li>
+                        <li><a href="#"> Questions</a></li>
+                    </ul>
+                </li>
+                
+                <li class="with-dropdown">
+                    <a href="#topic-buttons"><img src="https://i.ibb.co/8XYKTgh/reading-book-1.png" alt=""> Topics ⌄ </img></a>
+                    <ul  class="dropdown">
+                        <li><a href="#">Movement</a></li>
+                        <li><a href="#">Motor</a></li>
+                        <li><a href="#">Display</a></li>
+                        <li><a href="#">Sound</a></li>
+                        <li><a href="#">Control</a></li>
+                        <li><a href="#">Sensors</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Operator</a></li>
+                        <li><a href="#">Variable</a></li>
+                        <li><a href="#">My Block</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="#wro"><img src="https://i.ibb.co/Drnm7cM/competition.png" alt=""> About WRO ⌄ </img></a>
+                    <ul  class="dropdown">
+                        <li><a href="#">WRO?</a></li>
+                        <li><a href="#">ANS_journey</a></li>
+                        <li><a href="#">Tips</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="wrapper">
+        <div class="header-content" id="movement-home">
+            <h1>Sensors</h1>
+            <div>
+                <p>Sensors in EV3 are very important because they help the robot "see" and "feel" its surroundings in order for EV3 to make smart decisions based on what it senses.</p>
+                <p>
+                    <strong>There are 5 type of sensors:</strong>
+                </p>
+            </div>
+           <!-- grid-container has the margin to the left-->
+           <div class="grid-container-5col">
+
+            <!-- Introduction-->
+
+            <div class="grid-item">
+                <a href="">
+                    <div class="flex-grid">
+                        <div class="flex-item">
+                            <h3>Ev3 Brick</h3>
+                        <img src="https://d2t1xqejof9utc.cloudfront.net/screenshots/pics/2a068bc435627b569862da5e0523a113/large.jpg" alt="Sensor-brick">
+                        </div>
+                    </div>
+                </a>
+            </div>
+                <div class="grid-item">
+                    <a href="">
+                        <div class="flex-grid">
+                            <div class="flex-item">
+                                <h3>Color Sensor</h3>
+                                <img src="https://ev3dev-lang-java.github.io/docs/support/fundamentals/sensors/ev3-light-sensor/ev3_light_sensor.png" alt="Sensor-color">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <div class="flex-grid">
+                            <div class="flex-item">
+                                <h3>Touch Sensor</h3>
+                            <img src="https://m.media-amazon.com/images/I/51ANO3KKxDL._AC_UF894,1000_QL80_.jpg" alt="Sensor-touch">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <div class="flex-grid">
+                            <div class="flex-item">
+                                <h3 class="h3-smaller">Ultrasonic Sensor</h3>
+                                <img src="https://m.media-amazon.com/images/I/51wnwlOTfCL.jpg" alt="Sensor-ultrasonic">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="grid-item">
+                    <a href="">
+                        <div class="flex-grid">
+                            <div class="flex-item">
+                                <h3>Gyro Sensor</h3>
+                                <img src="https://i.ebayimg.com/images/g/w5AAAOSwzc5kTT20/s-l400.jpg" alt="Sensor-gyro">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                
+
+        <!-- Closure of div.grid-container -->
+        </div>
+        </div>
+            
+            <div class="side-bar">
+                <div class="menu">
+                    <div class="item">
+                        <div class="movement-logo"><a href="#movement-home"><img src="https://s12.gifyu.com/images/SZXRb.png" alt="logo sensor gyro"></a>
+                        </div>
+
+                        <a href="#movement-home"><span class="side-bar-title-1">Gyro Sensor:</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="#below-header" class="sub-item"> What's Gyro sensor?</a></li>
+                            <li><a href="#gyro-build" class="sub-item"> Add Gyro sensor design</a></li>
+                            <li><a href="#gyro-90deg" class="sub-item">Wait until "90 degrees"</a></li>
+                            <li><a href="#gyro-resetAngle" class="sub-item">"Reset Angle" block</a></li>
+                            <li><a href="#movement-challenge1" class="sub-item">Movement Challenge 1: in square</a></li>
+                            <li><a href="#gyro-challenge1" class="sub-item">Gyro Challenge: in square</a></li>
+                            <li><a href="#movement-key-takeaway" class="sub-item">Key-takeaways</a></li>
+                            <li><a href="#gyroSensor-quiz" class="sub-item">Quiz</a></li>
+                            <li><a href="#challengeYou" class="sub-item">Challenge for you</a></li>
+                        </ul>
+
+                        <!-- <a href="different-page.html#section1">Section One</a> -->
+                        <a href=""><span class="side-bar-title-2">The 5 Sensors:</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="#" class="sub-item">Brick Sensor</a></li>
+                            <li><a href="#" class="sub-item "> Color Sensor</a></li>
+                            <li><a href="#" class="sub-item">Touch Sensor</a></li>
+                            <li><a href="#" class="sub-item">Ultrasonic Sensor</a></li>
+                            <li><a href="#" class="sub-item highlight">Gyro Sensor</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- Introduction of color sensor -->
+        <div class="main-container grid-item together pink-background" id="below-header">
+            <div class="flex-grid flex-container flex-item challenge-container">
+                <div class="letter-both">
+                    <h2>Gyro Sensor</h2>
+                </div>
+                <div class="flex-item">
+                    <div>
+                        <img src="https://lh4.googleusercontent.com/proxy/l-FJyOpPtaoIGcACE6vkiLqJgfjmmnzIRV-DkbRbL6swyxnlmi9zh6iiIAWHr1X9kTsvGza8GLwL1lgMLmoYPlWUjDPNt93h3IkvpJytNfQDToU7IDezAGghYMdtgorP4ZIfvWP3eD6HrA" alt="gyro">
+                        <p>-> The Ultrasonic Sensor in EV3 it help the robot to make accurate turns. </p>
+                        <p>TIt's especially handy for tasks like driving in a straight line, making precise turns, or maintaining balance on two wheels. </p>
+                        <p>Without the Gyro Sensor, the robot might wobble, tip over, or get lost easily. </p>
+                   </div>
+                </div>
+
+                <div class="flex-item">
+                    <img src="https://i.pinimg.com/736x/02/98/4f/02984fd0e74609974dd809fa3cad3ab0.jpg" alt="compass-degree">
+                    <p>The Gyro Sensor is like a <strong>compass</strong> inside the robot's brain. It helps the robot know: </p>
+                    <p>Which way it's facing, just like how you know which way is north when you use a compass.</p>
+                     
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-container grid-item together pink-background" id="gyro-build">
+            <div class="one-grid flex-item">
+                <div class="letter-both">
+                    <h2>Add the Gyro sensor to the robot by:</h2>
+                </div>
+                <div class="flex-item">
+                    <div>
+                       <img src="https://i.ibb.co/sVTM0J8/IMG-2014.jpg" alt="IMG-2014" >
+                   </div>
+                </div>
+
+                <div class="flex-item">
+                     <a href="https://ashl3y-lin.github.io/Way-1_Exploration-Gyro_Sensor/"><button class="design_button">Click here to find the guide</button></a>
+                </div>
+            </div>
+        </div>
+
+<!-- Sensor How to look at the color -->
+        <div class="main-container grid-item together pink-background" id="view-touch">
+            <div class="one-grid flex-item">
+                <div class="letter-both">
+                    <h2>A way to know how much degrees is:</h2>
+                </div>
+                <div class="flex-item">
+                    <div>
+                       <img src="https://i.ibb.co/pr84pcR/ev3-connected-gyro.png" alt="ev3-connected-gyro">
+                   </div>
+                </div>
+
+                <div class="flex-item">
+                     <p>-> This shows the amount of how much the robot have rotate.</p>
+                     <p>-> It can be either positive(to the right) or negative(to the left) numbers.</p>
+                     <p>-> It is shown in <strong>degrees</strong></p>
+                </div>
+            </div>
+        </div>
+
+
+ <!-- The Wait until "Pressed" -> Start...-->
+        <div class="three-columns grid-container-height" id="gyro-90deg">
+            <div class="grid-item">
+                <h2>Wait until "90 degrees"</h2>
+                <div class="flex-item">
+                   <img src="https://i.ibb.co/YT3yFxQ/2-Gyro-waituntil.png" alt="2-Gyro-waituntil">
+                   <h3>Or</h3>
+                  <img src="https://i.ibb.co/9H0Rrc5/Gyro-waituntil.png" alt="Gyro-waituntil">
+                </div>
+            </div>
+            <div class="grid-item unite">
+                <div class="flex-item">
+                    <img src="https://s9.gifyu.com/images/Sa10p.gif" alt="gyro">
+                    <p>1- Move until gyro sensor > 90 degrees </p>
+                    <p>2- Robot stop moving</p>
+                    
+                </div>
+                <div class="flex-item">
+                    <img src="https://i.ibb.co/HYZSR1g/1-gyro-90-wait-Until.png" alt="1-gyro-90-wait-Until" >
+                    <p>1- <strong>Wait</strong> [Motors make a right spin turn at speed of 50%] UNTIL [gyro sensor counts "more than 90 degrees"]
+                    </p>
+                    <p>2- Stop turning.</p>
+                </div>
+            </div>
+        <!-- closure The div of 3-columns -->
+        </div>
+
+        <hr class="line-divider">
+
+<!-- Reset angle -->
+        <div class="grid-container">
+            <div class="grid-item" id="gyro-resetAngle">
+                <div class="flex-grid">
+                    <div class="flex-item">
+                        <h2>"Reset angle" block</h2>
+                        <img src="https://i.ibb.co/wSd745W/gyro-reset-Angle.png" alt="gyro-reset-Angle">
+                    </div>
+                    <div class="paragraph">
+                        <p>It's very important to add the <strong>reset angle</strong>. Because:</p>
+                        <p> -> Gyro sensor does not know where you want the robot to point (the zero degree) </p>
+                        <p>2- Will add extra degrees which make your robot not accurate.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="flex-grid">
+                    <div class="flex-item">
+                        <h2>Spin Turn Right:</h2>
+                        <img src="https://s9.gifyu.com/images/Sa10p.gif" alt="gyro">
+                    </div>
+                    <div class="flex-item">
+                       <img src="https://i.ibb.co/34dS2r1/2-Reset-Angle.png" alt="2-Reset-Angle">
+                    </div>
+                    <div class="paragraph">
+                        <p>1- <strong>Wait</strong> [Motors make a <strong>RIGHT</strong> spin turn at speed of 50%] UNTIL [gyro sensor counts "more than 90 degrees"]
+                        </p>
+                        <p>2- Stop turning.</p>
+                        <strong>
+                            <p>⚠ If it's not  accurate, you can add/substract the degrees from "90"</p>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="flex-grid">
+                    <div class="flex-item">
+                        <h2>Spin Turn Left:</h2>
+                        <img src="https://s9.gifyu.com/images/Sa102.gif" alt="gyro (1)">
+                    </div>
+                    <div class="flex-item">
+                        <img src="https://i.ibb.co/dmRzDYM/5-turn-left-gyro.png" alt="5-turn-left-gyro" >
+                    </div>
+                    <div class="paragraph">
+                        <p>1- <strong>Wait</strong> [Motors make a <strong>LEFT</strong> spin turn at speed of 50%] UNTIL [gyro sensor counts "more than 90 degrees"]
+                        </p>
+                        <p>2- Stop turning.</p>
+                        <strong>
+                            <p>⚠ If it's not  accurate, you can add/substract the degrees from "90"</p>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        <!-- closure: grid-container -->
+        </div>
+
+        <hr class="line-divider">
+
+                
+<!-- The REPEAT UNTIL -->
+
+<div class="grid-container">
+        <div id="movement-challenge1" class="grid-item together pinky-color"> <!--flex-container-->
+            <div class="flex-container flex-item">
+
+                    <div class="both2">
+                        <h2>Remember in this challenge in Movement?</h2>
+                        <h4 class="padding-bottom">I told you that we are going to fix this challenge to make the turns  more accurate</h4>
+                    </div>
+                    
+                    <div class="both3">
+                        <img src="https://s12.gifyu.com/images/SZ66s.gif" alt="movement-gif">
+                        
+                        <p>Notice that the robot does not turn accurately.</p>
+                    </div>
+
+                <div class="flex-item">
+                    <img src="https://i.ibb.co/dDsw16K/10-4-Square-Challenge1-img.png" alt="10-4-Square-Challenge1-img">
+                
+                </div>
+            </div>
+        </div>
+    <!-- closure of grid-conatiner -->
+    </div>
+
+<!-- THe challenge-->
+<div class="grid-container">
+        <div id="gyro-challenge1" class="grid-item together pink-background"> <!--flex-container-->
+            <div class="flex-container flex-item">
+
+                    <div class="both2">
+                        <h2>We are going to fix it by using: gyro sensor</h2>
+                    </div>
+                    
+                    <div class="both3">
+                        <img src="https://s12.gifyu.com/images/SaPDi.gif" alt="gyro (3)">
+                        
+                        <p>-> Notice that I used the control: "Repeat" block</p>
+                        <p>-> I decided to do it the other way, turning to the right instead of left</p>
+                        <p>-> But you can do it making the robot turning right</p>
+                    </div>
+
+                <div class="flex-item">
+                    <img src="https://i.ibb.co/D7ZtLzL/3-gyro-90-repeat.png" alt="3-gyro-90-repeat">
+                    <p>-> It depends on the ground surface where the robot it's in. For example:</p>
+                    <div class="add-padding">
+                        <p>- If my robot it's in a slippery ground, I will need <strong>less</strong> than 92 degrees.</p>
+                        <p>- If my robot it's in a hard ground, I will probably need <strong>more</strong> than 92 degrees.</p>
+                    </div>
+                    
+                    <p>I needed 92 degrees to make the robot turn how I wanted it.</p>
+                
+                </div>
+            </div>
+        </div>
+    <!-- closure of grid-conatiner -->
+    </div>
+
+        <hr class="line-divider">
+
+<div class="grid-container">
+            <!-- Observation area -->
+            <div class="grid-item together no-background" id="movement-key-takeaway">
+                <div class="label">
+                    <h3>Key-Takeaways: Why is Touch sensor important for programming?</h3>
+                </div>
+                <p>
+                    <ul class="observation-list">
+                        <li>-> <strong>Precision in Movement</strong>: It helps the robot move precisely. By measuring rotation and tilt, it ensures that the robot can make accurate turns.
+                        </li>
+                        <li>-> <strong> Stability</strong>: helps the robot maintain balance, especially when it's moving on two wheels or in challenging terrain/ground.
+                        </li>
+                        <li>-> <strong>Orientation Awareness</strong>: It provides the robot with awareness of its orientation in space. This allows the robot to understand which way it's facing and make adjustments to its movements accordingly. </li>
+                        <li>-> <strong>Good Navigation</strong>: It helps the robot follow a straight path, make precise turns, and navigate complex routes with confidence.</li>
+                        <li>-> <strong>Real-world Applications:</strong>
+                            <ul class="observation-sublist">
+                                <li> Drones</li>
+                                <li> Airplanes</li>
+                                <li> Robot Vacuum Cleaners</li>
+                                <li> Spacecraft and Satellites</li>
+                                <li>Remote-controlled Cars</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            </div>
+<!-- closure grid-container  -->
+    </div>
+
+
+<!-- Quiz Section -->
+    <div class="grid-container">
+        <div class="grid-item together pink-background" id="gyroSensor-quiz">
+            <!-- Quiz section -->
+            <div class="app">
+                <h1>Time for a quiz!</h1>
+                <div class="quiz">
+                    <h2 id="question"> Question goes here</h2>
+                    <div id="answer-buttons">
+                        <button class="btn"> Answer 1</button>
+                        <button class="btn"> Answer 2</button>
+                        <button class="btn"> Answer 3</button>
+                        <button class="btn"> Answer 4</button>
+                    </div>
+                    <button id="next-button">Next</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+<!-- Challenge for you section -->
+        <div class="grid-item together pink-background" id="challengeYou">
+            <div class="challenge-container">
+                <div class="letter-both">
+                    <h2>Challenge for you</h2>
+                </div>
+                <!-- <div class="flex-grid flex-container flex-item challenge-container-color">
+                    <div class="flex-item">
+                        <img src="https://i.ibb.co/5c3p04N/5-1-Color-you.png" alt="5-1-Color-you">
+                    </div> -->
+                    <div class="flex-item">
+                       <img src="https://s12.gifyu.com/images/Sa10H.gif" alt="gyro (2)">
+                        <strong>
+                            <p>Hint:</p>
+                        </strong>
+                        <p>-> Robot stops when gyro sensor sense "180 degrees" (half circle)</p>
+                        <p>-> Use "start moving" to right: 90. The speed is 50%.</p>
+                    </div>
+
+                    <div class="flex-item">
+                        <div id="hide-box">
+                            <img src="https://i.ibb.co/Y2nWj5Y/4-gyro-180-wait-Until.png" alt="4-gyro-180-wait-Until">
+                            <p>You might need  more or less than 180 degrees. So it's okay if it's not 180 degree to make the robot turn half circle.</p>
+                        </div>
+                         <button class="unhide-button" onclick="ShowAnswer()">Show Answer</button>  
+                    </div>
+                    
+                </div>
+            <!-- challenge container closure -->
+            </div>
+        </div>
+
+<!-- Dont know of this /div -->
+    </div>
+
+
+
+    <!-- Buttons for next -->
+    <div class="bottom-buttons">
+        <a href=""><button id="home" class="home-icon"> <img src="https://i.ibb.co/fChm6F5/home-icon-silhouette.png" alt="home-icon-silhouette" height="30"></button> </a>
+        <a href=""><button id="motors" class="next-button">Next: Control <img src="https://i.ibb.co/0CWHhM7/icons8-arrow-full-white.png" alt="icons8-arrow-full-white" height="30" ></button></a>
+       
+    </div>
+
+
+          <!-- Footer -->
+          <div class="footer-container">
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#topic-buttons">Topics</a></li>
+                    <li><a href="#wro">About WRO</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &copy;2024; Designed by <span class="designer">Ashley Lin </span> | Senior 2024 | American Nicaraguan School</p>
+            </div>
+        </div>
+
+
+</div>
+    
+
+    <script src="quizSection.js"></script>
+    <script src="showAnswer.js"></script>
+    <script src="scroll-smooth.js"></script>
+</body>
+</html>
